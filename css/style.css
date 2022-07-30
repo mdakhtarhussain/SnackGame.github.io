@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.body{
+    background: url("../img/backg1.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body h1{
+    position: absolute;
+    top: 2px;
+    left: 550px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(11, 0, 221);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 145px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(0, 0, 0);
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(0, 0, 0);
+}
+
+#board{
+    background: linear-gradient(rgb(85, 199, 83), rgb(232, 105, 185));
+    width: 82vmin;
+    height: 84vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(22, 1fr);
+    grid-template-columns: repeat(22, 1fr);
+    margin-top: 70px;
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1200px) {
+    .body h1{
+        font-size: 45px;
+        left: 40px;
+        top: 6px;
+        color: rgb(56, 0, 224);
+    }    
+    #scoreBox{
+        top: 600px;
+        left: 25px;
+        font-size: 43px;
+        color: rgb(255, 0, 0);    
+    }  
+    #hiscoreBox{
+        top: 600px;
+        right: 25px;
+        font-size: 43px;
+        color: rgb(255, 82, 82);
+       }
+    #board{
+        width: 72vmin;
+        height: 74vmin;
+        margin-top: 20px;
+    }
+           
+}
+
+@media (max-width: 495px) {
+    .body h1{
+        font-size: 36px;
+        left: 20px;
+        top: 10px;
+    }    
+    #scoreBox{
+        top: 585px;
+        left: 16px;
+        font-size: 35px;    
+    }  
+    #hiscoreBox{
+        top: 620px;
+        left: 20px;
+        font-size: 35px;
+       }
+    #board{
+        width: 92vmin;
+        height: 90vmin;
+        margin-bottom: 122px;
+    }
+           
+}
+
+
+
