@@ -32,7 +32,7 @@ function isCollide(snake) {
         }
     }
     // If you bump into the wall
-    if(snake[0].x >= 18 || snake[0].x <=0 || snake[0].y >= 18 || snake[0].y <=0){
+    if(snake[0].x >= 22 || snake[0].x <=0 || snake[0].y >= 22 || snake[0].y <=0){
         return true;
     }
         
@@ -103,7 +103,6 @@ function gameEngine(){
 
 
 // Main logic starts here
-//musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
